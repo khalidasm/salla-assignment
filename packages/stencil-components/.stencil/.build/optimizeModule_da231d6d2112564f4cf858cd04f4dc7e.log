@@ -1,0 +1,1 @@
+import{p as o,b as r}from"./p-BWSMMB8l.js";export{s as setNonce}from"./p-BWSMMB8l.js";import{g as t}from"./p-DQuL1Twl.js";var n=()=>{const r=import.meta.url;const t={};if(r!==""){t.resourcesUrl=new URL(".",r).href}return o(t)};n().then((async o=>{await t();return r([["p-2775b961",[[0,"container-component"]]]],o)}));

@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+packages/*/dist/
+packages/*/build/
+
+
+# Production
+/packages/*/dist
+/packages/*/build
+/packages/*/www
+/packages/*/loader
+

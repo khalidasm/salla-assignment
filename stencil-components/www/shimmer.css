@@ -1,0 +1,9 @@
+:host {
+    display: block;
+}
+
+@keyframes shimmer {
+    to {
+        transform: translateX(100%);
+    }
+}
