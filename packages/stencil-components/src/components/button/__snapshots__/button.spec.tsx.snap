@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button-component renders in disabled state 1`] = `
+<button-component is-disabled="">
+  <template shadowrootmode="open">
+    <button class="bg-[#004D5A] disabled:cursor-not-allowed disabled:opacity-50 duration-150 flex h-[45px] hover:bg-[#004D5A]/80 hover:cursor-pointer items-center justify-center p-[10px] rounded-[6px] text-[14px] text-white transition-all w-full" disabled="">
+      <slot></slot>
+    </button>
+  </template>
+  Disabled
+</button-component>
+`;
+
+exports[`button-component renders in loading state 1`] = `
+<button-component is-loading="">
+  <template shadowrootmode="open">
+    <button class="bg-[#004D5A] disabled:cursor-not-allowed disabled:opacity-50 duration-150 flex h-[45px] hover:bg-[#004D5A]/80 hover:cursor-pointer items-center justify-center p-[10px] rounded-[6px] text-[14px] text-white transition-all w-full" disabled="">
+      <div class="animate-spin border-2 border-t-transparent border-white h-5 rounded-full w-5"></div>
+    </button>
+  </template>
+  Loading
+</button-component>
+`;
+
+exports[`button-component renders with default props 1`] = `
+<button-component>
+  <template shadowrootmode="open">
+    <button class="bg-[#004D5A] disabled:cursor-not-allowed disabled:opacity-50 duration-150 flex h-[45px] hover:bg-[#004D5A]/80 hover:cursor-pointer items-center justify-center p-[10px] rounded-[6px] text-[14px] text-white transition-all w-full">
+      <slot></slot>
+    </button>
+  </template>
+  Click me
+</button-component>
+`;
+
+exports[`button-component renders with icon variant 1`] = `
+<button-component variant="icon">
+  <template shadowrootmode="open">
+    <button class="!p-0 bg-transparent cursor-pointer h-fit w-fit">
+      <slot></slot>
+    </button>
+  </template>
+  Icon
+</button-component>
+`;
+
+exports[`button-component renders with shimmer 1`] = `
+<button-component show-shimmer="">
+  <template shadowrootmode="open">
+    <shimmer-component height="45px" width="100%"></shimmer-component>
+  </template>
+  Shimmer
+</button-component>
+`;
+
+exports[`button-component renders with small variant 1`] = `
+<button-component variant="sm">
+  <template shadowrootmode="open">
+    <button class="bg-[#004D5A] disabled:cursor-not-allowed disabled:opacity-50 duration-150 flex h-fit hover:bg-[#004D5A]/80 hover:cursor-pointer items-center justify-center p-[7px] rounded-[6px] text-[10px] text-white transition-all w-full">
+      <slot></slot>
+    </button>
+  </template>
+  Small Button
+</button-component>
+`;

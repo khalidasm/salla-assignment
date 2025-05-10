@@ -1,0 +1,28 @@
+{
+  "name": "salla-assignment",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"cd packages/react-app && npm run dev\" \"cd packages/vue-app && npm run dev\"",
+    "preview": "concurrently \"cd packages/react-app && npm run preview\" \"cd packages/vue-app && npm run preview\"",
+    "dev:stencil": "cd packages/stencil-components && npm run start",
+    "build": "cd packages/stencil-components && npm run build && cd ../react-app && npm run build && cd ../vue-app && npm run build",
+    "test": "cd packages/stencil-components && npm run test"
+  },
+  "devDependencies": {
+    "@stencil/core": "^4.31.0",
+    "@stencil/react-output-target": "^1.0.2",
+    "@stencil/sass": "^3.2.1",
+    "@stencil/vue-output-target": "^0.10.7",
+    "@tailwindcss/cli": "^4.1.3",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/postcss": "^4.1.3",
+    "concurrently": "^9.1.2",
+    "stencil-tailwind-plugin": "^2.0.3",
+    "tailwindcss": "^4.1.3",
+    "typescript": "^5.8.3"
+  }
+}

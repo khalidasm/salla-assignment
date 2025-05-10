@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`title-component renders with empty text 1`] = `
+<title-component text="">
+  <template shadowrootmode="open">
+    <h1 class="font-bold text-[18px] text-primary"></h1>
+  </template>
+</title-component>
+`;
+
+exports[`title-component renders with text prop 1`] = `
+<title-component text="Hello World">
+  <template shadowrootmode="open">
+    <h1 class="font-bold text-[18px] text-primary">
+      Hello World
+    </h1>
+  </template>
+</title-component>
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shipping-view-component renders with shipping options 1`] = `
+<shipping-view-component>
+  <template shadowrootmode="open">
+    <div class="flex flex-col gap-5">
+      <div class="flex flex-row gap-5 items-center">
+        <img alt="store-logo" class="h-10 w-10" src="mocked-logo.svg">
+        <div class="flex flex-col">
+          <title-component text="Khalid's Store"></title-component>
+          <breadcrumbs-component></breadcrumbs-component>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex gap-3 items-center">
+          <div class="flex gap-3 items-center w-fit">
+            <button-component variant="icon">
+              <img alt="chevron-left" class="w-6" src="mocked-chevleft.svg">
+            </button-component>
+            <span class="flex font-bold items-center leading-none text-[14px] text-primary">
+              Shipping
+            </span>
+          </div>
+          <div class="w-full">
+            <div class="bg-primary h-[2px] w-full"></div>
+          </div>
+        </div>
+      </div>
+      <shipping-list-component></shipping-list-component>
+      <div class="bg-bg h-[1px] w-full"></div>
+      <cart-total showsimpletotal=""></cart-total>
+      <button-component isdisabled="" variant="normal">
+        Proceed to payment
+      </button-component>
+    </div>
+  </template>
+</shipping-view-component>
+`;
